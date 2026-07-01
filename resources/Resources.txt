@@ -1,0 +1,77 @@
+# Resources for board OMNIBUSF4SD (F4V3S)
+# using STM32F405-RGT6
+# Beeper
+resource BEEPER 1 B04
+
+# Motors
+resource MOTOR 1 B00
+resource MOTOR 2 B01
+resource MOTOR 3 A03
+resource MOTOR 4 A02
+resource MOTOR 5 A01
+resource MOTOR 6 A08
+
+# PPM / PWM inputs
+resource PPM 1 B08
+resource PWM 1 B08
+resource PWM 2 B09
+resource PWM 3 C06
+resource PWM 4 C07
+resource PWM 5 C08
+resource PWM 6 C09
+
+# Sonar (legacy, rarely used)
+resource SONAR_TRIGGER 1 A01
+resource SONAR_ECHO 1 A08
+
+# LED strip / status LED
+resource LED_STRIP 1 B06
+resource LED 1 B05
+
+# Serial ports
+resource SERIAL_TX 1 A09
+resource SERIAL_RX 1 A10
+resource SERIAL_TX 3 B10
+resource SERIAL_RX 3 B11
+resource SERIAL_TX 6 C06
+resource SERIAL_RX 6 C07
+
+# Inverters (UART3/UART6)
+resource INVERTER 3 C09
+resource INVERTER 6 C08
+
+# SPI buses
+resource SPI_SCK 1 A05
+resource SPI_MISO 1 A06
+resource SPI_MOSI 1 A07
+resource SPI_SCK 2 B13
+resource SPI_MISO 2 B14
+resource SPI_MOSI 2 B15
+resource SPI_SCK 3 C10
+resource SPI_MISO 3 C11
+resource SPI_MOSI 3 C12
+
+# ESC telemetry/passthrough
+resource ESCSERIAL 1 B08
+
+# ADC (battery/current/RSSI)
+resource ADC_BATT 1 C02
+resource ADC_RSSI 1 A00
+resource ADC_CURR 1 C01
+
+# Chip-select / sensor pins
+resource BARO_CS 1 B03
+resource GYRO_CS 1 A04
+resource GYRO_EXTI 1 C04
+resource OSD_CS 1 A15
+resource SDCARD_CS 1 B12
+resource SDCARD_DETECT 1 B07
+resource FLASH_CS 1 B12
+
+# Misc
+resource USB_DETECT 1 C05
+
+
+# Sensors on this board are a gyro/acc (MPU6500 or MPU6000), barometer (BMP280), 
+# MAX7456 OSD chip, and SD card support.
+
