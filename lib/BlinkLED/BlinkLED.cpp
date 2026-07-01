@@ -33,8 +33,9 @@ BlinkLED::BlinkLED(int pin, uint16_t hz)
   pinMode(_pin, OUTPUT);
 }
 
-void BlinkLED::run() {
-  if (_timer.running()) return;
+bool BlinkLED::run() {
+  if (_timer.running()) return false;
   digitalWrite(_pin, !digitalRead(_pin));
   _timer.reset();
+  return true;
 }

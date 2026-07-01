@@ -25,7 +25,7 @@ private:
 class BlinkLED {
 public:
   BlinkLED(int pin, uint16_t hz);
-  void run();
+  bool run(); // returns true when LED toggles
 
 private:
   int _pin;
